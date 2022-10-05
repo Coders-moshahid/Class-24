@@ -1,0 +1,299 @@
+body,p,h1,h2,h3,h4,h5,h6,a{
+    font-family: 'League Spartan', sans-serif !important;}
+
+/* ------------- header Part Start--------  */
+    header{
+    background-color: #e7e6e6;
+}
+header img{
+    width: 90px;
+}
+img{
+    max-width: 100%;
+}
+ul li a{
+    font-family: 'League Spartan', sans-serif !important;
+    font-weight: 600 !important;
+    font-size: 14px !important;
+    margin-right: 10px !important;
+    position: relative !important;
+    text-decoration: none !important;
+}
+ul li{
+    position: relative;
+}
+ul li:hover a::after{
+    width: 100%;
+}
+ul li a::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #4f76ed;
+    top: 154%;
+    left: 0;
+    transition: .4s;
+}
+ul li .nav-border::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #4f76ed;
+    top: 154%;
+    left: 0;
+}
+ul li .nav-border{
+    color: #4f76ed !important;
+}
+.dropdown-menu-our{
+    list-style-type: none;
+    background-color: #fff;
+    position: absolute;
+    top: 161%;
+    left: 0;
+    padding: 20px;
+    width: 190px;
+    transition: .4s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1;
+}  
+ul li:hover .dropdown-menu-our{
+    opacity: 1;
+    visibility: visible;
+} 
+.dropdown-menu-our li a{
+    background-color: #4f76ed;
+    color: #fff !important;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+.dropdown-menu-our li a::after{
+    content: "";
+    width: 0;
+    height: 0;
+}
+.header-btn{
+    width: 200px;
+    text-align: end;
+}
+.header-btn .default-btn{
+    background-color: #fff;
+    border-radius: 50px ;
+    padding: 8px 20px;
+    font-weight: 600;
+    color: #4f76ed;
+    font-size: 16px;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    z-index:1;
+    transition: .3s;
+}
+.header-btn .default-btn:hover{
+    color: #fff;
+}
+.header-btn .default-btn::before{
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    color: #fff;
+    background-color: #4f76ed;
+    transition: .3s;
+    z-index: -1;
+    border-radius: 50px;
+}
+.header-btn .default-btn:hover::before{
+    width: 100%;
+}
+/* ------------- header Part End--------  */
+/* ------------- Banner Part Start--------  */
+
+.banner{
+    background-color: #edf6ff;
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+}
+.banner-text{
+    padding: 200px 0;
+}
+.banner-img img{
+    height: 720px;
+    width: 720px;
+    border-radius: 50%;
+    position: absolute;
+    top: -18%;
+    right: -10%;
+}
+.wrapper-title{
+    width: 600px;
+    margin-top: 20px;
+}
+.product-card-title{
+    padding: 10px 0;
+}
+.wrapper-title h2{
+    font-weight:600;
+    font-size: 40px;
+    position: relative;
+}
+.wrapper-title .product-card-h2{
+    font-size: 35px;
+    padding-bottom: 10px;
+}
+.wrapper-title .product-card-h2::after{
+    content: "";
+    width: 40px;
+    height: 2px;
+    background-color: #4f76ed;
+    position: absolute;
+    top: 100px;
+    left: 0;
+}
+.wrapper-title h5{
+    font-size: 15px;
+    padding: 20px 0;
+    font-weight: 100;
+    letter-spacing: 1px;
+    line-height: 20px;
+    color: rgb(116, 108, 108);
+}
+.wrapper-title p{
+    color: #4f76ed;
+}
+.wrapper-title a{
+    display: inline-block;
+    border: 1px solid #4f76ed;
+    background-color: #4f76ed;
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: .3s;
+    font-weight: 400;
+}
+.wrapper-title a:hover{
+    background-color: transparent;
+    color: #4f76ed;
+}
+.product-card{
+    padding: 40px 0 80px;
+}
+.product-card-item {
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    box-shadow: rgb(0 0 0 / 20%) 2.5px 2.5px 10px;
+    border-radius: 10px;
+    transition: all 0.4s ease 0s;
+    position: relative;
+}
+.product-card-item h5 {
+    font-size: 19px;
+    padding: 5px 0;
+}
+.product-card-item span {
+    background-color: #5252f0;
+    width: 55px;
+    height: 55px;
+    text-align: center;
+    display: inline-block;
+    color: #fff;
+    font-size: 20px;
+    line-height: 55px;
+    margin: 10px 0;
+    border-radius: 25px 25px 25px 0;
+    position: relative;
+    transition: .4s;
+}
+.product-card-item span::after {
+    content: "";
+    width: 25px;
+    height: 2px;
+    background-color: #5252f0;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    transition: .4s;
+}
+.product-card-item p{
+    padding: 15px 0;
+}
+.card-pattern:first-child{
+    background: url(./img/service-patern.png), no-repeat center;
+    background-size: cover; 
+}
+.product-card-item:hover{
+    color: #fff;
+    background-color: #5252f0;
+}
+.product-card-item:hover span{
+    color: #5252f0;
+    background-color: #fff;
+}
+.product-card-item:hover span::after{
+    background-color: #fff;
+}
+/* ------------- Banner Part End--------  */
+/* ------------- Experience Part Start--------  */
+
+.experience{
+    background: url(./img/video-bg.jpg), no-repeat top center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    background-attachment: fixed;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    height: 500px;
+}
+.experience::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #4f76ed90;
+    z-index: -1;
+}
+.experience-title{
+    color: #fff;
+    width: 400px;
+    margin: auto;
+    padding: 10px 0 100px;
+}
+.experience-title h2::after {
+    content: "";
+    width: 90px;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    top: 125px;
+    left: 47%;
+    z-index: 1;
+}
+.experience-title p{
+    padding: 15px 0 0;
+}
+.experience-title span .fa-play{
+    font-size: 15px;
+    background-color: #fff;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    border-radius: 50%;
+    color: #5252f0;
+    position: relative;
+    z-index: 1;
+}
+/* ------------- Experience Part End--------  */
